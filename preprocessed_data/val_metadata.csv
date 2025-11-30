@@ -1,0 +1,1243 @@
+file_path,label,class_name
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0712.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0552.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1156.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0542.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0033.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0485.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1106.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0638.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0172.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0362.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0198.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0047.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0004.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0024.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0149.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (33).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0079 (14).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0044.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0165.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0768.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (121).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1265.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (118).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0030.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1104.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0007 (41).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0819.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0316.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0049.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0018 (38).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0004 (20).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0603.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (111).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1068.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (170).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0440.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0542.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0006 (43).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0461.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1068.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (79).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (107).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0981.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (67).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0976.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0169.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0077 (18).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1295.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1266.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1156.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0741.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (18).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0853.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1126.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0074 (7).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1263.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0205.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0538.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1269.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1203.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0058 (11).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0268.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (64).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0089.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0032 (5).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0919.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1159.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0652.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0722.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0760.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0079 (9).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (58).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0441.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1319.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0023.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0052.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0328.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0053 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1052.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0223.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0266.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0087.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0082.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (72).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0628.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0633.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1245.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (156).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1287.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (69).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1174.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0300.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1030.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (49).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1195.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0701.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0130.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0952.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0081 (8).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1329.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0031 (14).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0020 (21).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0697.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0968.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0053 (4).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0035.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1282.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0514.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0055 (4).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0968.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (17).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (20).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0062 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0683.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0143.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0053 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0259.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0078 (4).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0613.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0659.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0018 (17).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0255.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0285.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0582.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0065.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0073 (7).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0847.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0922.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (120).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0457.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0386.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1175.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0021 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0004 (16).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1202.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1285.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (110).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (93).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0002 (7).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1132.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (114).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0288.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (97).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (57).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0058 (4).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0239.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0065.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0070 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0030.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0056 (13).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0080.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (146).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1314.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0890.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1171.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (139).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (99).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1167.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0583.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (16).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0758.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0856.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0552.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (96).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1304.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0054 (4).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0285.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1327.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1268.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0808.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0550.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0071 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0013.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1319.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1188.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1047.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0349.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0168.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0676.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0957.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0020 (19).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1149.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0935.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0046 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0496.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0964.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1207.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0523.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1452.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0384.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (145).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0840.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0607.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0241.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1005.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0075 (15).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1073.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0071 (8).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1429.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0327.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0003 (15).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1176.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0007 (65).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-meTr_0001.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0327.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0055 (18).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0771.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1557.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (37).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0532.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0130.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1214.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (15).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (149).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0061 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0237.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0620.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1253.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0448.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0544.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1157.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1419.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0947.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0847.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1257.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0056 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0003 (16).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1034.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0467.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1427.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1267.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0069.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0815.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0733.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0007 (39).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (11).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0237.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1067.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0446.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0344.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0667.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0388.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0373.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0037 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1280.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0144.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0292.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0069 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0450.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0965.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0006 (38).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0057 (16).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1003.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0641.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0645.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0264.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0020 (11).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (9).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (137).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1195.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0729.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0489.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0018 (43).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0201.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0260.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1240.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0060 (11).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0802.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0072 (13).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (53).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (8).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0742.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1320.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1223.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (42).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0292.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0031 (15).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1357.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0665.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (80).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (11).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0736.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (95).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (116).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0076 (5).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0198.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0813.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (57).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0716.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1450.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (131).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0373.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (138).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0407.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0846.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0355.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1216.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0887.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0948.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1309.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (75).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0033 (16).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0337.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (64).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1168.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1278.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1005.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0954.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (162).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0847.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (98).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0910.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0786.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0742.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1439.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0557.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0549.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0450.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1159.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0880.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1014.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0624.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0336.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1011.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1260.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0039 (9).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0828.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1373.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0061 (4).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0467.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (31).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1144.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1328.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0123.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0773.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0022.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0069.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (22).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1074.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0029 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0563.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1290.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0075.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0483.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0222.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0484.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0603.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0933.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0092.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (72).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0020 (23).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (124).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1084.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1312.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0376.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0118.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (87).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0479.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0183.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0093.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0031 (13).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0804.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (104).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0593.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1169.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (18).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0748.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0495.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0111.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0318.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0005 (20).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0018 (71).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0852.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0415.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1041.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1028.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1075.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0356.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0838.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1278.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1051.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (20).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0319.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0044.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0998.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1039.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0582.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0019 (5).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1101.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (127).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0079.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (69).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0077 (8).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0903.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0240.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0032.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0120.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0052 (13).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (4).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0620.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (127).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1218.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0823.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1230.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1127.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0553.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0210.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0869.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1443.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1053.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0075 (16).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0036 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0635.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0642.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1261.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0074 (13).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (54).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0296.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0868.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0313.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1169.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1225.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0204.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0221.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0998.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1023.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0063 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0374.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0717.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1134.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1224.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0306.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0034 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1108.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0019 (33).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0823.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (50).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0738.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0870.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0769.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0199.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0320.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (90).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (33).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1002.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1121.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0401.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0005 (8).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0893.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0361.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0369.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (109).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0932.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (84).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0477.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0429.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0025.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1219.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0139.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1061.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0567.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0649.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0141.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (130).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (92).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0508.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0453.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (90).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0060 (10).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0448.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1049.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0160.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (65).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1327.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1003.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0715.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0986.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0763.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0079 (8).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (137).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1211.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1089.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0006 (39).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0369.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0385.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0054 (9).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (19).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (117).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0044.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1043.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0036 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0051.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0036 (8).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0018 (36).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0114.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0217.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0259.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0593.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0007 (73).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0591.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1032.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0737.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0011.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1152.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0993.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (19).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1371.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (96).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1185.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0703.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0038 (17).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1125.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (116).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0452.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0080.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0311.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0833.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0498.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0627.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0059 (7).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0179.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0754.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0087.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0563.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0071 (4).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (49).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0930.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (4).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0820.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0060 (15).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0955.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1271.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0548.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0048 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1320.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0622.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0122.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0021 (5).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0104.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0464.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0858.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0705.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0839.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1401.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (104).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (70).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0445.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0085.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (124).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0082 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0320.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0497.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0124.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0185.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-meTr_0004.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0894.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1085.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0440.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0527.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0960.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0080 (12).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1475.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0006 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0356.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0854.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0114.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0759.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (108).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (59).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0018 (34).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (15).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (108).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0071 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1376.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0305.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0789.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0220.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (37).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (63).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0345.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1134.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1262.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (9).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0164.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1505.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1161.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0069.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0536.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0041.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (83).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0818.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0323.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0160.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0267.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0675.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1173.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0182.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0031 (12).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1377.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1123.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1230.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1124.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0204.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (105).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0381.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0076 (17).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0920.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0635.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0232.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1397.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0805.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0926.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (158).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0295.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1238.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0018 (65).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1152.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0111.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0030.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0033 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0358.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1136.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0132.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0035 (14).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0698.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0471.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0461.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0570.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0977.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0891.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (91).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1138.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (117).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0001 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (114).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1323.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0594.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0079 (19).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0688.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0482.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0034 (11).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (79).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0048.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0897.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0533.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (64).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0666.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0020 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0074 (17).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0809.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0923.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1270.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0521.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0527.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (19).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0692.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (13).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0510.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0075.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1385.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1177.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (59).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0906.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1091.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0119.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (65).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0037 (17).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0795.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (37).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0747.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0558.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0755.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1143.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0041.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0384.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0417.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1115.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0303.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0504.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0073.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1202.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0429.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (152).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0158.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0233.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0007 (71).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (8).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0097.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1042.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0638.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1019.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0354.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1081.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0883.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (148).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (52).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (49).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0059 (4).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1451.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (130).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1202.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0751.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1414.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1343.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (125).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (93).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1109.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0010.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (63).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0724.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1419.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (164).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (86).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1167.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0802.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0071 (9).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0006 (7).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1241.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (73).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0142.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1210.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1219.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (147).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (121).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (139).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0411.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0792.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1322.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0093.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0151.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0287.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0983.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0018 (32).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0424.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0678.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1274.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0029.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0031 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (37).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0269.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0273.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1052.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1123.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0616.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0212.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0227.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0426.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (119).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0019 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1151.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0403.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (47).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0316.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0007 (26).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0170.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0325.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0077 (5).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1170.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0427.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0502.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0910.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0153.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (155).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0487.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0846.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (65).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0127.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0468.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0994.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0669.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0695.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0231.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0865.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0938.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0366.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0935.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (76).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0053 (10).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1111.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0366.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (76).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1473.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0199.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1060.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (44).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0058 (10).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0605.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0056 (10).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (55).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0435.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0098.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0232.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0007 (55).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (50).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0774.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (112).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (38).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (120).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1456.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0785.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1299.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1485.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1031.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0006 (17).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (44).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0923.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0676.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0565.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0871.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1227.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (85).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (98).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1259.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0869.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0516.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0071 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0208.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0439.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1102.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0929.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0016.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0381.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0689.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1078.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0951.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0544.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0052 (8).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (21).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0696.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1303.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0759.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1160.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1213.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1007.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0208.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0073 (13).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0244.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1266.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1157.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0347.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0006 (48).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0632.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (115).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1071.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0279.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (143).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0336.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1036.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0391.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0933.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0078 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0454.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0078 (14).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0405.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0954.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1020.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (121).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1080.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0156.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0019 (21).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0053 (16).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (103).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (88).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0403.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0890.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (15).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1470.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0889.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0824.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0339.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (36).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0840.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0280.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0909.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0228.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1005.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (98).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0056 (18).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0020 (5).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (29).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0722.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0639.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0054 (15).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0164.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0808.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0062 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1266.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0977.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0684.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1290.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0907.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0789.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1321.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (61).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0462.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (48).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1332.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1005.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0076 (7).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0912.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0963.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0367.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (133).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0537.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0455.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0770.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0324.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0845.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0081.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (109).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1198.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1229.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0670.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (58).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (93).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (121).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0500.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (141).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1073.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (130).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (106).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1120.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0050.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0436.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1118.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1010.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0109.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0606.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0006 (9).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (88).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (122).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1215.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1372.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0605.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0192.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0053.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0207.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1434.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0326.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1564.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0073.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (138).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (143).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1264.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1033.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1327.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (151).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0623.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (93).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0977.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (114).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0212.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (22).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0685.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0696.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0525.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1421.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0655.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (102).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (91).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1063.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0539.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1277.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (91).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1181.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0039.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0449.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1153.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0071 (11).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0303.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (27).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0498.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0086.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (89).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (92).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0007 (44).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (98).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (47).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0089.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0299.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (59).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1235.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0387.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0436.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1075.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0043.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0242.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (26).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0746.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0080 (11).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0557.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (13).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0205.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1371.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0743.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0080 (18).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (166).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0550.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (101).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (30).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1442.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0980.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0804.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0990.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0732.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (111).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1322.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0379.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0529.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1428.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1318.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (111).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0033 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0240.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0911.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0055 (11).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1196.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0112.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1298.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0901.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (38).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0726.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0082 (12).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0056 (9).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0855.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (65).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (31).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0098.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0370.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0032 (8).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1071.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1036.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (16).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1004.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0039.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (139).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (10).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (97).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0784.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0006 (20).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0056 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1180.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0769.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0460.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0775.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0033.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0008 (92).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0790.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0314.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0007 (70).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0889.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (70).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1176.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0695.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (81).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (113).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0201.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0233.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (53).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0113.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0057.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1242.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (12).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0686.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1182.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (42).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1370.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1241.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0047.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0102.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0053 (12).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0564.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1254.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0251.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0985.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0734.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0141.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0122.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1330.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0309.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (42).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0032 (17).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1027.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0928.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0543.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0715.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0096.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1221.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0886.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0193.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (111).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1268.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0884.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (55).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (44).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1254.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0074.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0210.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0828.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0607.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0543.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0072 (12).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (134).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0674.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-piTr_0001.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1521.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0021.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0681.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0071 (12).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0131.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (104).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (110).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1386.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0879.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0488.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0438.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1042.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1014.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0555.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0309.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0785.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0946.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0529.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (109).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0554.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1444.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0772.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0273.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1036.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0245.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0007 (8).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0077.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0492.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0455.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0010 (95).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0660.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1032.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1092.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0936.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0822.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0168.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0105.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0623.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0385.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (83).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (28).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0038 (12).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0351.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1006.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (77).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0056.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1328.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1011.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0925.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0363.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1402.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0182.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0054 (12).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0831.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0266.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0068.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1165.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0359.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0641.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1069.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1137.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1124.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0057 (7).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0012 (154).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0335.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0365.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1295.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0016 (118).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0847.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0005 (9).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1252.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1122.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0018 (63).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (74).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0129.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0013 (13).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0018 (21).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1454.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1133.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0821.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0030 (2).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0009 (9).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0940.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1459.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0991.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0659.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1325.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0123.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0518.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1165.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0423.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0011 (104).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0028 (3).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1178.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0037 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0462.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (19).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0106.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0019 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1251.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0690.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0072 (7).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0404.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1136.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0050 (9).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1365.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0817.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0036 (12).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_1100.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0939.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0770.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_0140.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-gl_1129.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_1313.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0019 (25).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0798.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (24).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0030 (6).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0266.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (102).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0017 (80).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0014 (12).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0076.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0821.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0015 (13).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\MR0034 (16).jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_1121.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-pi_0684.jpg,tumor,tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\no tumor\Tr-no_0553.jpg,no tumor,no tumor
+Dataset\Extracted data\Brain_Tumor_MRI_Dataset\Dataset\Training\tumor\Tr-me_0531.jpg,tumor,tumor
