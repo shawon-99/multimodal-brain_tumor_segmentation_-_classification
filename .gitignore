@@ -4,6 +4,9 @@ Dataset/
 # Project planning
 plan.md
 
+# PDF files (thesis proposals, papers, etc.)
+*.pdf
+
 # Python virtual environment
 .venv/
 
