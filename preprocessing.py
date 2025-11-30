@@ -2,9 +2,11 @@ import os
 import numpy as np
 import pandas as pd
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageEnhance
 from sklearn.model_selection import train_test_split
 import shutil
+from scipy.ndimage import map_coordinates, gaussian_filter
+import random
 
 
 def resize_image(image, target_size=(224, 224), keep_aspect_ratio=False):
@@ -31,31 +33,211 @@ def resize_image(image, target_size=(224, 224), keep_aspect_ratio=False):
         return image.resize(target_size, Image.Resampling.LANCZOS)
 
 
-def normalize_image(image_array, method='minmax'):
+def zscore_normalize(image_array, per_channel=True, epsilon=1e-8):
     """
-    Normalize image pixel values.
+    Z-score normalization: (x - μ) / σ
+    
+    Standardizes image intensity values to have mean=0 and std=1.
+    Recommended for medical imaging and cross-dataset generalization.
     
     Args:
-        image_array: numpy array of image
-        method: 'minmax' for [0,1] range or 'standard' for mean=0, std=1
+        image_array: numpy array of image (H, W) or (H, W, C)
+        per_channel: If True and image has channels, normalize each channel separately
+                     This is essential for multi-modal MRI (T1, T2, FLAIR, T1-CE)
+        epsilon: Small constant to avoid division by zero
         
     Returns:
-        numpy array: Normalized image
+        numpy array: Z-score normalized image
     """
     image_array = image_array.astype(np.float32)
     
-    if method == 'minmax':
-        # Normalize to [0, 1]
-        return image_array / 255.0
-    elif method == 'standard':
-        # Standardize to mean=0, std=1
+    if per_channel and len(image_array.shape) == 3:
+        # Multi-channel image (H, W, C) - normalize each channel independently
+        normalized = np.zeros_like(image_array)
+        for c in range(image_array.shape[2]):
+            channel = image_array[:, :, c]
+            mean = np.mean(channel)
+            std = np.std(channel)
+            normalized[:, :, c] = (channel - mean) / (std + epsilon)
+        return normalized
+    else:
+        # Single channel or grayscale image
         mean = np.mean(image_array)
         std = np.std(image_array)
-        if std > 0:
-            return (image_array - mean) / std
-        return image_array - mean
+        return (image_array - mean) / (std + epsilon)
+
+
+# ============================================================================
+# Data Augmentation Functions (For Thesis - Domain Generalization)
+# ============================================================================
+
+def augment_rotation(image, angle_range=(-30, 30)):
+    """
+    Rotate image by a random angle.
+    
+    Args:
+        image: PIL Image
+        angle_range: Tuple of (min_angle, max_angle) in degrees
+        
+    Returns:
+        PIL Image: Rotated image
+    """
+    angle = random.uniform(angle_range[0], angle_range[1])
+    return image.rotate(angle, resample=Image.BICUBIC, fillcolor=0)
+
+
+def augment_flip(image, horizontal=True, vertical=False):
+    """
+    Randomly flip image horizontally and/or vertically.
+    
+    Args:
+        image: PIL Image
+        horizontal: If True, may flip horizontally
+        vertical: If True, may flip vertically
+        
+    Returns:
+        PIL Image: Flipped image
+    """
+    if horizontal and random.random() > 0.5:
+        image = image.transpose(Image.FLIP_LEFT_RIGHT)
+    if vertical and random.random() > 0.5:
+        image = image.transpose(Image.FLIP_TOP_BOTTOM)
+    return image
+
+
+def augment_zoom(image, zoom_range=(0.8, 1.2)):
+    """
+    Random zoom in/out with center crop/pad.
+    
+    Args:
+        image: PIL Image
+        zoom_range: Tuple of (min_zoom, max_zoom)
+        
+    Returns:
+        PIL Image: Zoomed image
+    """
+    zoom_factor = random.uniform(zoom_range[0], zoom_range[1])
+    w, h = image.size
+    
+    # Calculate new size
+    new_w = int(w * zoom_factor)
+    new_h = int(h * zoom_factor)
+    
+    # Resize image
+    resized = image.resize((new_w, new_h), Image.BICUBIC)
+    
+    # Center crop or pad to original size
+    if zoom_factor > 1.0:
+        # Crop from center
+        left = (new_w - w) // 2
+        top = (new_h - h) // 2
+        return resized.crop((left, top, left + w, top + h))
     else:
-        raise ValueError("Method must be 'minmax' or 'standard'")
+        # Pad to center
+        new_image = Image.new(image.mode, (w, h), 0)
+        paste_x = (w - new_w) // 2
+        paste_y = (h - new_h) // 2
+        new_image.paste(resized, (paste_x, paste_y))
+        return new_image
+
+
+def augment_intensity(image, intensity_range=(0.9, 1.1)):
+    """
+    Vary image brightness/intensity.
+    
+    Args:
+        image: PIL Image
+        intensity_range: Tuple of (min_factor, max_factor) for brightness
+        
+    Returns:
+        PIL Image: Intensity-adjusted image
+    """
+    factor = random.uniform(intensity_range[0], intensity_range[1])
+    enhancer = ImageEnhance.Brightness(image)
+    return enhancer.enhance(factor)
+
+
+def augment_elastic_deform(image_array, alpha=30, sigma=5, random_state=None):
+    """
+    Elastic deformation for medical image augmentation.
+    Particularly useful for segmentation tasks.
+    
+    Args:
+        image_array: numpy array (H, W) or (H, W, C)
+        alpha: Deformation intensity
+        sigma: Smoothness of deformation
+        random_state: Random seed
+        
+    Returns:
+        numpy array: Deformed image
+    """
+    if random_state is None:
+        random_state = np.random.RandomState(None)
+    
+    shape = image_array.shape[:2]
+    
+    # Generate random displacement fields
+    dx = gaussian_filter((random_state.rand(*shape) * 2 - 1), sigma) * alpha
+    dy = gaussian_filter((random_state.rand(*shape) * 2 - 1), sigma) * alpha
+    
+    # Create meshgrid
+    x, y = np.meshgrid(np.arange(shape[1]), np.arange(shape[0]))
+    indices = np.reshape(y + dy, (-1, 1)), np.reshape(x + dx, (-1, 1))
+    
+    # Apply deformation
+    if len(image_array.shape) == 3:
+        # Multi-channel image
+        deformed = np.zeros_like(image_array)
+        for c in range(image_array.shape[2]):
+            deformed[:, :, c] = map_coordinates(
+                image_array[:, :, c], indices, order=1, mode='reflect'
+            ).reshape(shape)
+        return deformed
+    else:
+        # Single channel
+        return map_coordinates(image_array, indices, order=1, mode='reflect').reshape(shape)
+
+
+def apply_augmentation_pipeline(image, augment_config=None):
+    """
+    Apply a pipeline of augmentation transforms.
+    
+    Args:
+        image: PIL Image
+        augment_config: Dict specifying which augmentations to apply
+                       If None, applies all with default params
+        
+    Returns:
+        PIL Image: Augmented image
+    """
+    if augment_config is None:
+        augment_config = {
+            'rotation': True,
+            'flip': True,
+            'zoom': True,
+            'intensity': True,
+            'elastic': False  # Computationally expensive, use for segmentation
+        }
+    
+    # Apply augmentations
+    if augment_config.get('rotation', False):
+        image = augment_rotation(image, angle_range=(-30, 30))
+    
+    if augment_config.get('flip', False):
+        image = augment_flip(image, horizontal=True, vertical=True)
+    
+    if augment_config.get('zoom', False):
+        image = augment_zoom(image, zoom_range=(0.8, 1.2))
+    
+    if augment_config.get('intensity', False):
+        image = augment_intensity(image, intensity_range=(0.9, 1.1))
+    
+    if augment_config.get('elastic', False):
+        img_array = np.array(image)
+        img_array = augment_elastic_deform(img_array, alpha=30, sigma=5)
+        image = Image.fromarray(img_array.astype(np.uint8))
+    
+    return image
 
 
 def create_data_split(dataset_path, train_ratio=0.7, val_ratio=0.15, test_ratio=0.15, random_state=42):
@@ -164,15 +346,15 @@ def organize_processed_data(splits, output_dir, copy_files=True):
     return metadata
 
 
-def preprocess_and_save(image_path, output_path, target_size=(224, 224), normalize_method='minmax'):
+def preprocess_and_save(image_path, output_path, target_size=(224, 224)):
     """
     Preprocess a single image and save it.
+    Uses Z-score normalization as per thesis requirements.
     
     Args:
         image_path: Path to input image
         output_path: Path to save preprocessed image
         target_size: Target size for resizing
-        normalize_method: Normalization method
         
     Returns:
         bool: True if successful
@@ -191,20 +373,16 @@ def preprocess_and_save(image_path, output_path, target_size=(224, 224), normali
         # Convert to array for normalization
         img_array = np.array(img_resized)
         
-        # Normalize
-        img_normalized = normalize_image(img_array, method=normalize_method)
+        # Apply Z-score normalization (per-channel for RGB)
+        img_normalized = zscore_normalize(img_array, per_channel=True)
         
         # Convert back to image (scale to 0-255 for saving)
-        if normalize_method == 'minmax':
-            img_to_save = (img_normalized * 255).astype(np.uint8)
+        img_min = img_normalized.min()
+        img_max = img_normalized.max()
+        if img_max > img_min:
+            img_to_save = ((img_normalized - img_min) / (img_max - img_min) * 255).astype(np.uint8)
         else:
-            # For standard normalization, scale back to 0-255 range
-            img_min = img_normalized.min()
-            img_max = img_normalized.max()
-            if img_max > img_min:
-                img_to_save = ((img_normalized - img_min) / (img_max - img_min) * 255).astype(np.uint8)
-            else:
-                img_to_save = np.zeros_like(img_normalized, dtype=np.uint8)
+            img_to_save = np.zeros_like(img_normalized, dtype=np.uint8)
         
         # Save
         output_path = Path(output_path)
@@ -243,3 +421,49 @@ def get_image_statistics(image_path):
         }
     except Exception as e:
         return {'error': str(e)}
+
+
+def batch_preprocess_images(metadata_path, output_base_dir, target_size=(224, 224)):
+    """
+    Batch preprocess all images according to metadata CSV.
+    Uses Z-score normalization as per thesis requirements.
+    
+    Args:
+        metadata_path: Path to metadata CSV file (e.g., all_metadata.csv)
+        output_base_dir: Base directory for output (e.g., Dataset/preprocessed_data)
+        target_size: Target size for resizing
+        
+    Returns:
+        dict: Statistics about processing (success, failed, total)
+    """
+    df = pd.read_csv(metadata_path)
+    output_base_dir = Path(output_base_dir)
+    
+    stats = {'total': len(df), 'success': 0, 'failed': 0, 'failed_files': []}
+    
+    for idx, row in df.iterrows():
+        # Get split (train/val/test) and class name
+        split = row['split']
+        class_name = row['class_name']
+        file_path = Path(row['file_path'])
+        
+        # Construct output path
+        output_path = output_base_dir / split / class_name / file_path.name
+        
+        # Preprocess and save with Z-score normalization
+        success = preprocess_and_save(file_path, output_path, target_size)
+        
+        if success:
+            stats['success'] += 1
+        else:
+            stats['failed'] += 1
+            stats['failed_files'].append(str(file_path))
+        
+        # Progress indicator
+        if (idx + 1) % 500 == 0:
+            print(f"Processed {idx + 1}/{stats['total']} images...")
+    
+    print(f"\nBatch processing complete!")
+    print(f"Total: {stats['total']}, Success: {stats['success']}, Failed: {stats['failed']}")
+    
+    return stats
