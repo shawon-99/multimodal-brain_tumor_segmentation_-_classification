@@ -12,14 +12,6 @@ import random
 def resize_image(image, target_size=(224, 224), keep_aspect_ratio=False):
     """
     Resize image to target size.
-    
-    Args:
-        image: PIL Image object
-        target_size: Tuple of (width, height)
-        keep_aspect_ratio: If True, pad to maintain aspect ratio
-        
-    Returns:
-        PIL Image: Resized image
     """
     if keep_aspect_ratio:
         # Create a new image with target size and paste the resized image
@@ -39,15 +31,6 @@ def zscore_normalize(image_array, per_channel=True, epsilon=1e-8):
     
     Standardizes image intensity values to have mean=0 and std=1.
     Recommended for medical imaging and cross-dataset generalization.
-    
-    Args:
-        image_array: numpy array of image (H, W) or (H, W, C)
-        per_channel: If True and image has channels, normalize each channel separately
-                     This is essential for multi-modal MRI (T1, T2, FLAIR, T1-CE)
-        epsilon: Small constant to avoid division by zero
-        
-    Returns:
-        numpy array: Z-score normalized image
     """
     image_array = image_array.astype(np.float32)
     
@@ -74,13 +57,6 @@ def zscore_normalize(image_array, per_channel=True, epsilon=1e-8):
 def augment_rotation(image, angle_range=(-30, 30)):
     """
     Rotate image by a random angle.
-    
-    Args:
-        image: PIL Image
-        angle_range: Tuple of (min_angle, max_angle) in degrees
-        
-    Returns:
-        PIL Image: Rotated image
     """
     angle = random.uniform(angle_range[0], angle_range[1])
     return image.rotate(angle, resample=Image.BICUBIC, fillcolor=0)
@@ -89,14 +65,6 @@ def augment_rotation(image, angle_range=(-30, 30)):
 def augment_flip(image, horizontal=True, vertical=False):
     """
     Randomly flip image horizontally and/or vertically.
-    
-    Args:
-        image: PIL Image
-        horizontal: If True, may flip horizontally
-        vertical: If True, may flip vertically
-        
-    Returns:
-        PIL Image: Flipped image
     """
     if horizontal and random.random() > 0.5:
         image = image.transpose(Image.FLIP_LEFT_RIGHT)
@@ -108,13 +76,6 @@ def augment_flip(image, horizontal=True, vertical=False):
 def augment_zoom(image, zoom_range=(0.8, 1.2)):
     """
     Random zoom in/out with center crop/pad.
-    
-    Args:
-        image: PIL Image
-        zoom_range: Tuple of (min_zoom, max_zoom)
-        
-    Returns:
-        PIL Image: Zoomed image
     """
     zoom_factor = random.uniform(zoom_range[0], zoom_range[1])
     w, h = image.size
@@ -144,13 +105,6 @@ def augment_zoom(image, zoom_range=(0.8, 1.2)):
 def augment_intensity(image, intensity_range=(0.9, 1.1)):
     """
     Vary image brightness/intensity.
-    
-    Args:
-        image: PIL Image
-        intensity_range: Tuple of (min_factor, max_factor) for brightness
-        
-    Returns:
-        PIL Image: Intensity-adjusted image
     """
     factor = random.uniform(intensity_range[0], intensity_range[1])
     enhancer = ImageEnhance.Brightness(image)
@@ -161,15 +115,6 @@ def augment_elastic_deform(image_array, alpha=30, sigma=5, random_state=None):
     """
     Elastic deformation for medical image augmentation.
     Particularly useful for segmentation tasks.
-    
-    Args:
-        image_array: numpy array (H, W) or (H, W, C)
-        alpha: Deformation intensity
-        sigma: Smoothness of deformation
-        random_state: Random seed
-        
-    Returns:
-        numpy array: Deformed image
     """
     if random_state is None:
         random_state = np.random.RandomState(None)
@@ -201,14 +146,6 @@ def augment_elastic_deform(image_array, alpha=30, sigma=5, random_state=None):
 def apply_augmentation_pipeline(image, augment_config=None):
     """
     Apply a pipeline of augmentation transforms.
-    
-    Args:
-        image: PIL Image
-        augment_config: Dict specifying which augmentations to apply
-                       If None, applies all with default params
-        
-    Returns:
-        PIL Image: Augmented image
     """
     if augment_config is None:
         augment_config = {
@@ -243,16 +180,6 @@ def apply_augmentation_pipeline(image, augment_config=None):
 def create_data_split(dataset_path, train_ratio=0.7, val_ratio=0.15, test_ratio=0.15, random_state=42):
     """
     Create train/val/test splits from dataset.
-    
-    Args:
-        dataset_path: Path to dataset directory
-        train_ratio: Proportion for training set
-        val_ratio: Proportion for validation set
-        test_ratio: Proportion for test set
-        random_state: Random seed for reproducibility
-        
-    Returns:
-        dict: Dictionary with 'train', 'val', 'test' keys containing file paths and labels
     """
     dataset_path = Path(dataset_path)
     image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tif', '.tiff'}
@@ -302,14 +229,6 @@ def create_data_split(dataset_path, train_ratio=0.7, val_ratio=0.15, test_ratio=
 def organize_processed_data(splits, output_dir, copy_files=True):
     """
     Organize preprocessed data into structured directories.
-    
-    Args:
-        splits: Dictionary from create_data_split
-        output_dir: Base directory for organized data
-        copy_files: If True, copy files; if False, just create metadata
-        
-    Returns:
-        dict: Paths to created directories and metadata files
     """
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -350,14 +269,6 @@ def preprocess_and_save(image_path, output_path, target_size=(224, 224)):
     """
     Preprocess a single image and save it.
     Uses Z-score normalization as per thesis requirements.
-    
-    Args:
-        image_path: Path to input image
-        output_path: Path to save preprocessed image
-        target_size: Target size for resizing
-        
-    Returns:
-        bool: True if successful
     """
     try:
         # Load image
@@ -390,20 +301,13 @@ def preprocess_and_save(image_path, output_path, target_size=(224, 224)):
         Image.fromarray(img_to_save).save(output_path)
         
         return True
-    except Exception as e:
-        print(f"Error processing {image_path}: {str(e)}")
+    except Exception:
         return False
 
 
 def get_image_statistics(image_path):
     """
     Get basic statistics about an image.
-    
-    Args:
-        image_path: Path to image file
-        
-    Returns:
-        dict: Image statistics
     """
     try:
         img = Image.open(image_path)
@@ -427,14 +331,6 @@ def batch_preprocess_images(metadata_path, output_base_dir, target_size=(224, 22
     """
     Batch preprocess all images according to metadata CSV.
     Uses Z-score normalization as per thesis requirements.
-    
-    Args:
-        metadata_path: Path to metadata CSV file (e.g., all_metadata.csv)
-        output_base_dir: Base directory for output (e.g., Dataset/preprocessed_data)
-        target_size: Target size for resizing
-        
-    Returns:
-        dict: Statistics about processing (success, failed, total)
     """
     df = pd.read_csv(metadata_path)
     output_base_dir = Path(output_base_dir)
@@ -458,12 +354,5 @@ def batch_preprocess_images(metadata_path, output_base_dir, target_size=(224, 22
         else:
             stats['failed'] += 1
             stats['failed_files'].append(str(file_path))
-        
-        # Progress indicator
-        if (idx + 1) % 500 == 0:
-            print(f"Processed {idx + 1}/{stats['total']} images...")
-    
-    print(f"\nBatch processing complete!")
-    print(f"Total: {stats['total']}, Success: {stats['success']}, Failed: {stats['failed']}")
     
     return stats

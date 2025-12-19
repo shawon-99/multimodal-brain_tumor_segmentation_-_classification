@@ -6,12 +6,6 @@ from collections import defaultdict
 def load_dataset_info(dataset_path):
     """
     Scan and summarize dataset structure.
-    
-    Args:
-        dataset_path: Path to the dataset directory
-        
-    Returns:
-        dict: Dataset information including structure and file counts
     """
     dataset_path = Path(dataset_path)
 
@@ -45,12 +39,6 @@ def load_dataset_info(dataset_path):
 def get_class_distribution(dataset_paths):
     """
     Count images per class/category across multiple datasets.
-    
-    Args:
-        dataset_paths: List of paths to dataset directories
-        
-    Returns:
-        dict: Distribution of images per dataset and class
     """
     distribution = {}
     

@@ -1,5 +1,16 @@
+# Core ML/DL
+torch>=2.0.0
+torchvision>=0.15.0
+einops>=0.7.0
+tensorboard>=2.14.0
+
+# Data processing
 matplotlib
 pandas
 Pillow
 numpy
 scikit-learn
+scipy
+
+# Utilities
+tqdm>=4.65.0
