@@ -11,6 +11,8 @@ Pillow
 numpy
 scikit-learn
 scipy
+nibabel>=5.0.0
+SimpleITK>=2.3.0
 
 # Utilities
 tqdm>=4.65.0

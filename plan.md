@@ -28,12 +28,21 @@
   - Batch processing of all images
   - Files: `preprocessing.py`, `main.ipynb`
 
+- [x] **BRATs Dataset Preprocessing**
+  - NIfTI volume loading (`nibabel`)
+  - 2D slice extraction from 3D volumes
+  - Multi-modal MRI stacking (T1, T1-CE, T2, FLAIR)
+  - Segmentation mask conversion (BRATs → 4-class format)
+  - Automated patient-level train/val/test split
+  - File: `brats_preprocessing.py`
+
 - [x] **Data Augmentation**
   - Rotation (±30°)
   - Horizontal/Vertical flipping
   - Random zoom (0.8-1.2×)
   - Intensity variation (±10%)
   - Elastic deformation (for segmentation)
+  - Synchronized augmentation for image+mask
   - Functions: `augment_rotation()`, `augment_flip()`, `augment_zoom()`, `augment_intensity()`, `augment_elastic_deform()`
 
 ### Phase 2: Model Architecture
@@ -58,53 +67,131 @@
   - Real image inference
   - File: `model_training.ipynb`
 
+### Phase 3: Data Loading & Training Infrastructure
+
+- [x] **Custom Dataset & DataLoader**
+  - `BrainTumorDataset` class for classification
+  - `BraTSSegmentationDataset` class for segmentation
+  - Z-score normalization integration
+  - On-the-fly augmentation during training
+  - Multi-modal MRI loading (4-channel)
+  - Class imbalance handling
+  - Domain label support
+  - File: `dataset.py`
+
+- [x] **Training Loop Implementation - Classification**
+  - `Trainer` class for classification
+  - Forward/backward pass with gradient clipping
+  - Validation loop with metrics tracking
+  - Model checkpointing (best + periodic)
+  - TensorBoard logging
+  - Early stopping (patience=15)
+  - File: `train.py`
+
+- [x] **Training Loop Implementation - Segmentation**
+  - `SegmentationTrainer` class
+  - Segmentation-specific loss handling
+  - Dice score and IoU tracking
+  - Per-class metric logging
+  - Visualization during training
+  - File: `train.py`
+
+- [x] **Loss Functions**
+  - CrossEntropyLoss for classification
+  - DiceLoss for segmentation
+  - FocalLoss for class imbalance
+  - CombinedLoss (Dice + CrossEntropy)
+  - TverskyLoss for FP/FN control
+  - File: `losses.py`
+
+- [x] **Segmentation Metrics**
+  - Dice coefficient (per-class)
+  - IoU (Intersection over Union)
+  - Pixel accuracy
+  - Sensitivity & Specificity
+  - Hausdorff distance (95th percentile)
+  - `SegmentationMetrics` accumulator class
+  - File: `seg_metrics.py`
+
+- [x] **Training Configuration**
+  - Optimizer: AdamW (lr=1e-4, weight_decay=0.05)
+  - Learning rate scheduler: Cosine annealing
+  - Gradient clipping (max_norm=1.0)
+  - Early stopping support
+
+- [x] **Training Notebooks**
+  - Classification: `train_model.ipynb`
+  - Segmentation: `segmentation_training.ipynb`
+
+### Phase 3 (Current): Model Training & Evaluation
+
+- [x] **Initial Classification Training**
+  - Binary classifier trained on Brain_Tumor_MRI_Dataset
+  - 10 epochs completed
+  - Validation accuracy: 93.48%
+  - ⚠️ Test accuracy: 43.40% (severe overfitting issue)
+  - Checkpoints saved in `experiments/checkpoints/`
+
 ---
 
 ## 🔄 Next Steps
 
-### Phase 3: Data Loading & Training Infrastructure
+### Phase 4: Segmentation Training & Evaluation (READY TO START)
 
-#### 3.1 Custom Dataset & DataLoader
-- [ ] **Create PyTorch Dataset class**
-  - Load images from metadata CSV
-  - Apply Z-score normalization
-  - On-the-fly augmentation during training
-  - Support for multi-modal MRI loading
-  - Handle class imbalance
+#### 4.1 Preprocess BRATs Dataset
+- [ ] **Run BRATs Preprocessing**
+  - Execute `brats_preprocessing.py` on full dataset
+  - Extract 2D slices from ~369 patients
+  - Generate train/val/test metadata
+  - Verify slice quality and class distribution
 
-- [ ] **DataLoader Configuration**
-  - Batch size: 16-32 (GPU memory dependent)
-  - Multi-worker data loading
-  - Pin memory for GPU
-  - Shuffle training data
-  - File: `dataset.py`
+#### 4.2 Train Segmentation Model
+- [ ] **Initial Training**
+  - Use `segmentation_training.ipynb`
+  - Train ViT segmentation model on BRATs
+  - Monitor Dice score and IoU
+  - Target: Dice >0.85 on validation set
 
-#### 3.2 Training Loop Implementation
-- [ ] **Basic Training Loop**
-  - Forward pass
-  - Loss computation (CrossEntropyLoss for classification)
-  - Backward pass & optimization
-  - Validation loop
-  - Model checkpointing
-  - File: `train.py`
+- [ ] **Hyperparameter Tuning**
+  - Try different loss functions (Dice, Combined, Focal)
+  - Adjust learning rate and batch size
+  - Experiment with augmentation strategies
 
-- [ ] **Training Configuration**
-  - Optimizer: AdamW (lr=1e-4, weight_decay=0.05)
-  - Learning rate scheduler: Cosine annealing
-  - Epochs: 100-150
-  - Early stopping
-  - Gradient clipping (max_norm=1.0)
+#### 4.3 Segmentation Evaluation
+- [ ] **Test Set Evaluation**
+  - Compute Dice, IoU, Hausdorff distance
+  - Per-class metrics (whole tumor, core, enhancing)
+  - Visualize predictions vs ground truth
+  - Generate segmentation quality report
 
-- [ ] **Metrics & Logging**
-  - Training/validation loss
-  - Accuracy, Precision, Recall, F1-score
-  - Confusion matrix
-  - TensorBoard logging
-  - Save best model based on validation metrics
+### Phase 5: Fix Classification Overfitting
 
-### Phase 4: Domain Generalization Mechanisms
+#### 5.1 Diagnose Current Issues
+- [ ] **Investigate Train-Test Gap**
+  - Verify data split integrity (no leakage)
+  - Check preprocessing consistency
+  - Analyze test set distribution
+  - Visualize misclassified samples
 
-#### 4.1 Domain Adversarial Training
+#### 5.2 Improve Regularization
+- [ ] **Model Modifications**
+  - Increase dropout rate (0.1 → 0.2)
+  - Add stronger data augmentation
+  - Try pretrained ViT weights (transfer learning)
+  - Reduce model size (ViT-Small instead of ViT-Base)
+
+#### 5.3 Retrain Classification Model
+- [ ] **Improved Training**
+  - Apply fixes from diagnosis
+  - Train with better regularization
+  - Monitor train-val-test performance closely
+  - Target: Test accuracy >85%
+
+### Phase 6: Domain Generalization Mechanisms
+
+### Phase 6: Domain Generalization Mechanisms
+
+#### 6.1 Domain Adversarial Training
 - [ ] **Domain Discriminator**
   - Gradient Reversal Layer (GRL)
   - Domain classifier network
@@ -116,20 +203,19 @@
   - Multi-source domain training
   - Domain confusion objective
 
-#### 4.2 Meta-Learning (MAML)
-- [ ] **MAML Implementation**
-  - Inner loop: Domain-specific adaptation
-  - Outer loop: Meta-learning update
-  - Support set and query set sampling
-  - Few-shot learning capability
-  - Library: `higher` for second-order gradients
+#### 6.2 Multi-Task Learning (Classification + Segmentation)
+- [ ] **Unified Architecture**
+  - Shared ViT encoder for both tasks
+  - Dual heads: classification + segmentation
+  - Multi-task loss balancing
+  - File: Update `model.py` with `ViTMultiTask`
 
-- [ ] **Episodic Training**
-  - Sample episodes from multiple domains
-  - Meta-train on 2 datasets
-  - Meta-test on held-out domain
+- [ ] **Training Strategy**
+  - Mixed-batch sampling (classification & segmentation)
+  - Alternating task optimization
+  - Joint training experiments
 
-#### 4.3 Feature Alignment
+#### 6.3 Feature Alignment
 - [ ] **Alignment Loss Functions**
   - Maximum Mean Discrepancy (MMD)
   - Correlation Alignment (CORAL)
@@ -140,63 +226,60 @@
   - Adaptive Instance Normalization (AdaIN)
   - Domain randomization
 
-### Phase 5: Training Strategy
+### Phase 7: Multi-Domain Training Strategy
 
-#### 5.1 Single-Domain Training (Baseline)
-- [ ] **Train on Each Dataset Separately**
-  - Brain_Tumor_MRI_Dataset → Binary classifier
-  - Brain_Tumor_MRI_Scans → Multi-class classifier
-  - BRATs_2020 → Segmentation model
-  - Establish baseline performance
-
-#### 5.2 Multi-Domain Training
-- [ ] **Joint Training**
-  - Combine all datasets
-  - Shared ViT encoder
+#### 7.1 Cross-Dataset Experiments
+- [ ] **Train on Multiple Datasets**
+  - Joint training on all 3 datasets
   - Domain adversarial training
-  - Batch mixing strategy
+  - Leave-one-domain-out evaluation
+  - Measure generalization gap
 
-#### 5.3 Transfer Learning
+#### 7.2 Transfer Learning
 - [ ] **Pre-training & Fine-tuning**
   - Pre-train on largest dataset (BRATs)
   - Fine-tune on smaller datasets
   - Progressive unfreezing
   - Learning rate scheduling
 
-### Phase 6: Evaluation & Testing
+### Phase 8: Evaluation & Testing
 
-#### 6.1 Cross-Dataset Evaluation
+#### 8.1 Cross-Dataset Evaluation
 - [ ] **Leave-One-Domain-Out Protocol**
   - Train on 2 datasets, test on 3rd
   - All 3 combinations
   - Measure generalization gap
   - Report cross-domain performance
 
-#### 6.2 Metrics Computation
-- [ ] **Classification Metrics**
+#### 8.2 Metrics Computation
+- [x] **Classification Metrics**
   - Accuracy, Precision, Recall, F1-score
   - AUC-ROC curve
   - Per-class performance
-  - Domain-wise breakdown
+  - Confusion matrix
+  - File: `evaluate.py`
 
-- [ ] **Segmentation Metrics**
+- [x] **Segmentation Metrics**
   - Dice coefficient (per region)
   - IoU (Intersection over Union)
   - Hausdorff Distance (95th percentile)
   - Sensitivity & Specificity
+  - File: `seg_metrics.py`
 
-#### 6.3 Ablation Studies
+#### 8.3 Ablation Studies
 - [ ] **Component Analysis**
   - ViT vs CNN baseline (ResNet, EfficientNet)
   - With/without domain adversarial training
-  - With/without meta-learning
+  - With/without multi-task learning
   - With/without feature alignment
   - Impact of Z-score normalization
   - Effect of data augmentation
 
-### Phase 7: Results & Visualization
+### Phase 9: Results & Visualization
 
-#### 7.1 Performance Visualization
+### Phase 9: Results & Visualization
+
+#### 9.1 Performance Visualization
 - [ ] **Training Curves**
   - Loss curves (train/val)
   - Accuracy curves
@@ -212,9 +295,9 @@
 - [ ] **Segmentation Visualization**
   - Ground truth vs prediction overlay
   - Multi-modal input visualization
-  - 3D volume rendering (if applicable)
+  - Per-class segmentation quality
 
-#### 7.2 Results Analysis
+#### 9.2 Results Analysis
 - [ ] **Performance Tables**
   - Single-domain results
   - Cross-domain results
@@ -226,9 +309,9 @@
   - Statistical significance tests
   - Confidence intervals
 
-### Phase 8: Documentation & Thesis Writing
+### Phase 10: Documentation & Thesis Writing
 
-#### 8.1 Code Documentation
+#### 10.1 Code Documentation
 - [ ] **README.md**
   - Project overview
   - Installation instructions
@@ -241,7 +324,7 @@
   - Inline comments for complex logic
   - Type hints
 
-#### 8.2 Thesis Sections
+#### 10.2 Thesis Sections
 - [ ] **Methodology Chapter**
   - Architecture description
   - Domain generalization techniques
@@ -268,118 +351,138 @@ E:\Thesis\
 │   │   ├── Brain_Tumor_MRI_Dataset/
 │   │   ├── Brain_Tumor_MRI_Scans/
 │   │   └── BRATs_2020/
-│   └── preprocessed_data/
-│       ├── train/
-│       ├── val/
-│       ├── test/
+│   ├── preprocessed_data/                  # ✅ Classification data
+│   │   ├── train/ (no tumor, tumor)
+│   │   ├── val/
+│   │   ├── test/
+│   │   └── *.csv (metadata)
+│   └── brats_preprocessed/                 # ✅ Segmentation data
+│       ├── slices/                         # Extracted 2D slices
 │       └── *.csv (metadata)
 │
-├── models/                    # [TO CREATE]
-│   ├── checkpoints/
-│   └── saved_models/
+├── experiments/                            # ✅ Training outputs
+│   ├── checkpoints/                        # Classification checkpoints
+│   │   ├── best_model.pth
+│   │   └── training_history.json
+│   ├── segmentation_checkpoints/          # Segmentation checkpoints
+│   ├── logs/                              # TensorBoard logs
+│   ├── segmentation_logs/
+│   └── results/                           # Evaluation results
+│       └── segmentation_results/
 │
-├── logs/                      # [TO CREATE]
-│   └── tensorboard/
+├── src/                                    # ✅ Source code
+│   ├── eda.py                             # ✅ Exploratory data analysis
+│   ├── preprocessing.py                   # ✅ Preprocessing & augmentation
+│   ├── brats_preprocessing.py             # ✅ BRATs NIfTI processing
+│   ├── model.py                           # ✅ ViT architecture
+│   ├── dataset.py                         # ✅ PyTorch Dataset classes
+│   ├── train.py                           # ✅ Training loops (classification + segmentation)
+│   ├── losses.py                          # ✅ Segmentation loss functions
+│   ├── seg_metrics.py                     # ✅ Segmentation metrics
+│   ├── evaluate.py                        # ✅ Evaluation metrics
+│   └── utils.py                           # ✅ Utility functions
 │
-├── results/                   # [TO CREATE]
-│   ├── figures/
-│   ├── tables/
-│   └── predictions/
+├── notebooks/
+│   ├── main.ipynb                         # ✅ EDA & preprocessing
+│   ├── model_training.ipynb               # ✅ Model testing
+│   ├── train_model.ipynb                  # ✅ Classification training
+│   └── segmentation_training.ipynb        # ✅ Segmentation training
 │
-├── eda.py                     # ✅ Exploratory data analysis
-├── preprocessing.py           # ✅ Preprocessing & augmentation
-├── model.py                   # ✅ ViT architecture
-├── dataset.py                 # [ ] PyTorch Dataset class
-├── train.py                   # [ ] Training loop
-├── evaluate.py                # [ ] Evaluation metrics
-├── domain_adaptation.py       # [ ] Domain generalization
-├── utils.py                   # [ ] Utility functions
-│
-├── main.ipynb                 # ✅ EDA & preprocessing
-├── model_training.ipynb       # ✅ Model testing
-├── training.ipynb             # [ ] Training experiments
-├── evaluation.ipynb           # [ ] Results analysis
-│
-├── requirements.txt           # ✅ Dependencies
-├── .gitignore                 # ✅ Git ignore rules
-└── plan.md                    # ✅ This file
+├── requirements.txt                        # ✅ Dependencies (updated)
+├── .gitignore                             # ✅ Git ignore rules
+└── plan.md                                # ✅ This file (updated)
 ```
 
 ---
 
-## 🎯 Immediate Next Action
+## 🎯 Immediate Next Actions
 
-**Priority: Create Data Loading Infrastructure**
+**Priority 1: Start Segmentation Pipeline**
 
-1. **Create `dataset.py`**:
-   - Implement `BrainTumorDataset` class
-   - Load from metadata CSV
-   - Apply transformations
-   - Handle augmentation
-
-2. **Update `requirements.txt`**:
-   - Add PyTorch and related dependencies
-   ```
-   torch>=2.0.0
-   torchvision>=0.15.0
-   einops>=0.7.0
-   tensorboard>=2.14.0
+1. **Preprocess BRATs Dataset** (30-60 minutes):
+   ```python
+   # Run in notebook or script
+   from src.brats_preprocessing import process_brats_dataset
+   
+   process_brats_dataset(
+       brats_root='Dataset/Extracted data/BRATs_2020/BraTS2020_TrainingData/MICCAI_BraTS2020_TrainingData',
+       output_dir='Dataset/brats_preprocessed',
+       save_slices=True,
+       max_patients=None  # Process all patients
+   )
    ```
 
-3. **Create `train.py`**:
-   - Basic training loop
-   - Validation loop
-   - Checkpointing
-   - Metrics logging
+2. **Train Segmentation Model**:
+   - Open `notebooks/segmentation_training.ipynb`
+   - Follow the step-by-step workflow
+   - Monitor Dice score and IoU metrics
+   - Target: Dice >0.85 on validation set
+
+3. **Evaluate Segmentation Results**:
+   - Test set evaluation
+   - Visualize predictions
+   - Generate results report
+
+**Priority 2: Fix Classification Overfitting**
+
+4. **Investigate Train-Test Gap**:
+   - Verify data split (check for leakage)
+   - Analyze test set distribution
+   - Visualize misclassified examples
+
+5. **Retrain with Improvements**:
+   - Increase dropout or reduce model size
+   - Add stronger regularization
+   - Use pretrained weights if available
 
 ---
 
-## 📊 Expected Timeline
+## 📊 Expected Timeline (Updated)
 
 | Phase | Duration | Status |
 |-------|----------|--------|
 | Data Preparation | Week 1-2 | ✅ Complete |
 | Model Architecture | Week 3-4 | ✅ Complete |
-| Data Loading & Training | Week 5-6 | 🔄 Next |
-| Domain Generalization | Week 7-8 | ⏳ Pending |
-| Evaluation & Testing | Week 9-10 | ⏳ Pending |
-| Results & Analysis | Week 11-12 | ⏳ Pending |
-| Documentation | Week 13-14 | ⏳ Pending |
-| Thesis Writing | Week 15-16 | ⏳ Pending |
+| Data Loading & Training Infrastructure | Week 5-6 | ✅ Complete |
+| Initial Classification Training | Week 7 | ✅ Complete (needs fixing) |
+| **Segmentation Implementation** | **Week 8** | **🔄 In Progress** |
+| Fix Classification & Train Segmentation | Week 9-10 | ⏳ Next |
+| Multi-Task Learning | Week 11 | ⏳ Pending |
+| Domain Generalization | Week 12-13 | ⏳ Pending |
+| Cross-Domain Evaluation | Week 14 | ⏳ Pending |
+| Results & Analysis | Week 15-16 | ⏳ Pending |
+| Thesis Writing | Week 17-18 | ⏳ Pending |
 
 ---
 
-## 🔧 Dependencies to Install
+## 🔧 Dependencies (Updated)
 
 ```bash
 # Core ML/DL
 torch>=2.0.0
 torchvision>=0.15.0
 einops>=0.7.0
-
-# Data processing
-numpy>=1.24.0
-pandas>=2.0.0
-scikit-learn>=1.3.0
-scipy>=1.10.0
-Pillow>=10.0.0
-
-# Visualization
-matplotlib>=3.7.0
-seaborn>=0.12.0
 tensorboard>=2.14.0
 
-# Domain adaptation
-higher>=0.2.1          # For MAML
-dalib>=0.3.0           # Domain adaptation library
+# Data processing
+matplotlib
+pandas
+Pillow
+numpy
+scikit-learn
+scipy
 
-# Medical imaging (if using BRATs NIfTI files)
-nibabel>=5.0.0
-SimpleITK>=2.2.0
+# Medical imaging
+nibabel>=5.0.0          # ✅ Installed - NIfTI file handling
+SimpleITK>=2.3.0        # ✅ Installed - Medical image processing
 
 # Utilities
 tqdm>=4.65.0
-pyyaml>=6.0
+```
+
+**Installation:**
+```bash
+pip install -r requirements.txt
 ```
 
 ---
@@ -390,23 +493,44 @@ pyyaml>=6.0
 - **Single-domain accuracy**: >90%
 - **Cross-domain accuracy**: >85%
 - **F1-score**: >0.85
+- **Current Status**: Overfitting issue (Val: 93.48%, Test: 43.40%) ⚠️
 
 ### Segmentation:
 - **Dice coefficient**: >0.85 (single-domain), >0.80 (cross-domain)
 - **IoU**: >0.75
 - **Hausdorff Distance**: <5mm
+- **Current Status**: Ready to train ✅
 
 ### Domain Generalization:
 - **Generalization gap**: <10%
 - **Domain confusion**: >80%
+- **Current Status**: Not started ⏳
 
 ---
 
-## 📝 Notes
+## 📝 Implementation Notes
 
-- Focus on classification first (simpler task)
-- Segmentation can be implemented after successful classification
-- Use tensorboard for experiment tracking
-- Save model checkpoints regularly
-- Document all hyperparameters
-- Run ablation studies systematically
+### Completed:
+- ✅ Full segmentation pipeline implemented (preprocessing, dataset, losses, metrics, trainer)
+- ✅ Classification training infrastructure complete
+- ✅ Multi-modal MRI support (4-channel input)
+- ✅ Comprehensive metrics for both tasks
+- ✅ TensorBoard logging integrated
+- ✅ Both classification and segmentation notebooks ready
+
+### Known Issues:
+- ⚠️ Classification model severe overfitting (50% train-test gap)
+- ⚠️ Need to verify data split integrity
+- ⚠️ May need pretrained weights or smaller model
+
+### Next Priorities:
+1. 🔥 Run BRATs preprocessing (30-60 min)
+2. 🔥 Train segmentation model (expect Dice >0.85)
+3. 🔥 Fix classification overfitting
+4. 🔥 Implement multi-task learning (shared encoder)
+5. 🔥 Add domain adversarial training
+
+### Architecture Flexibility:
+- Both classification (RGB, 3-channel) and segmentation (multi-modal, 4-channel) supported
+- Can train independently or jointly (multi-task)
+- Ready for domain generalization experiments
