@@ -185,7 +185,7 @@ def create_dataloaders(
     val_csv,
     test_csv,
     batch_size=32,
-    num_workers=4,
+    num_workers=2,
     augment_train=True,
     return_domain=False,
     img_size=224
@@ -358,7 +358,94 @@ class BraTSSegmentationDataset(Dataset):
                     mean = image[c].mean()
                     image[c] = (image[c] - mean) * contrast_factor + mean
         
+        # Elastic deformation (use cautiously - can be too aggressive)
+        if self.augment_config.get('elastic', False) and random.random() > 0.7:  # Reduced frequency
+            image, mask = self._elastic_transform(image, mask, 
+                                                  alpha=random.uniform(10, 25),  # Reduced intensity
+                                                  sigma=random.uniform(3, 5))    # Reduced sigma
+        
+        # Random zoom/scale
+        if self.augment_config.get('zoom', False) and random.random() > 0.5:
+            scale = random.uniform(0.9, 1.1)
+            image, mask = self._random_zoom(image, mask, scale)
+        
+        # Gaussian noise (use cautiously)
+        if self.augment_config.get('noise', False) and random.random() > 0.7:  # Reduced frequency
+            noise_std = random.uniform(0.005, 0.02)  # Reduced intensity
+            noise = np.random.normal(0, noise_std, image.shape)
+            image = image + noise
+        
+        # Gamma correction (intensity transform)
+        if self.augment_config.get('gamma', False) and random.random() > 0.5:
+            gamma = random.uniform(0.8, 1.2)
+            # Apply gamma to normalized images
+            image_min = image.min()
+            image_max = image.max()
+            if image_max > image_min:
+                image_norm = (image - image_min) / (image_max - image_min)
+                image = np.power(image_norm, gamma) * (image_max - image_min) + image_min
+        
         return image, mask
+    
+    def _elastic_transform(self, image, mask, alpha, sigma):
+        """
+        Elastic deformation of images as described in [Simard2003].
+        Critical for medical image segmentation.
+        """
+        from scipy.ndimage import gaussian_filter, map_coordinates
+        
+        shape = image.shape[1:]  # (H, W)
+        
+        # Generate random displacement fields
+        dx = gaussian_filter((np.random.random(shape) * 2 - 1), sigma) * alpha
+        dy = gaussian_filter((np.random.random(shape) * 2 - 1), sigma) * alpha
+        
+        x, y = np.meshgrid(np.arange(shape[1]), np.arange(shape[0]))
+        indices = [y + dy, x + dx]
+        
+        # Apply to all image channels
+        image_deformed = np.zeros_like(image)
+        for c in range(image.shape[0]):
+            image_deformed[c] = map_coordinates(image[c], indices, order=1, mode='reflect')
+        
+        # Apply to mask (using nearest neighbor)
+        mask_deformed = map_coordinates(mask, indices, order=0, mode='reflect')
+        
+        return image_deformed, mask_deformed
+    
+    def _random_zoom(self, image, mask, scale):
+        """
+        Random zoom (scale) augmentation.
+        If scale > 1.0: zoom in (crop center)
+        If scale < 1.0: zoom out (pad edges)
+        """
+        from scipy.ndimage import zoom as scipy_zoom
+        
+        h, w = image.shape[1], image.shape[2]
+        
+        # Apply zoom
+        image_zoomed = scipy_zoom(image, (1, scale, scale), order=1)
+        mask_zoomed = scipy_zoom(mask, (scale, scale), order=0)
+        
+        # Crop or pad to original size
+        new_h, new_w = image_zoomed.shape[1], image_zoomed.shape[2]
+        
+        if new_h > h:  # Crop
+            start_h = (new_h - h) // 2
+            start_w = (new_w - w) // 2
+            image_zoomed = image_zoomed[:, start_h:start_h+h, start_w:start_w+w]
+            mask_zoomed = mask_zoomed[start_h:start_h+h, start_w:start_w+w]
+        else:  # Pad
+            pad_h = (h - new_h) // 2
+            pad_w = (w - new_w) // 2
+            image_padded = np.zeros_like(image)
+            mask_padded = np.zeros_like(mask)
+            image_padded[:, pad_h:pad_h+new_h, pad_w:pad_w+new_w] = image_zoomed
+            mask_padded[pad_h:pad_h+new_h, pad_w:pad_w+new_w] = mask_zoomed
+            image_zoomed = image_padded
+            mask_zoomed = mask_padded
+        
+        return image_zoomed, mask_zoomed
     
     def _resize_image(self, image):
         """Resize multi-channel image."""
@@ -402,6 +489,7 @@ def create_segmentation_dataloaders(
     batch_size=8,
     num_workers=4,
     augment_train=True,
+    augment_config=None,  # NEW: Custom augmentation config
     img_size=224
 ):
     """
@@ -415,17 +503,23 @@ def create_segmentation_dataloaders(
         batch_size: Batch size (usually smaller for segmentation due to memory)
         num_workers: Number of data loading workers
         augment_train: Whether to augment training data
+        augment_config: Custom augmentation configuration dict (overrides defaults)
         img_size: Target image size
     
     Returns:
         train_loader, val_loader, test_loader
     """
-    # Augmentation config for training
-    augment_config = {
-        'rotation': True,
-        'flip': True,
-        'intensity': True,
-    } if augment_train else None
+    # Use custom augmentation config if provided, otherwise use defaults
+    if augment_config is None:
+        augment_config = {
+            'rotation': True,
+            'flip': True,
+            'intensity': True,
+            'elastic': False,   # Conservative default
+            'zoom': True,
+            'noise': False,     # Conservative default
+            'gamma': True,
+        } if augment_train else None
     
     # Create datasets
     train_dataset = BraTSSegmentationDataset(

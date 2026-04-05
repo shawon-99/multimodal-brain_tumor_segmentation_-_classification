@@ -28,14 +28,10 @@ def resize_image(image, target_size=(224, 224), keep_aspect_ratio=False):
 def zscore_normalize(image_array, per_channel=True, epsilon=1e-8):
     """
     Z-score normalization: (x - μ) / σ
-    
-    Standardizes image intensity values to have mean=0 and std=1.
-    Recommended for medical imaging and cross-dataset generalization.
     """
     image_array = image_array.astype(np.float32)
     
     if per_channel and len(image_array.shape) == 3:
-        # Multi-channel image (H, W, C) - normalize each channel independently
         normalized = np.zeros_like(image_array)
         for c in range(image_array.shape[2]):
             channel = image_array[:, :, c]
@@ -44,14 +40,13 @@ def zscore_normalize(image_array, per_channel=True, epsilon=1e-8):
             normalized[:, :, c] = (channel - mean) / (std + epsilon)
         return normalized
     else:
-        # Single channel or grayscale image
         mean = np.mean(image_array)
         std = np.std(image_array)
         return (image_array - mean) / (std + epsilon)
 
 
 # ============================================================================
-# Data Augmentation Functions (For Thesis - Domain Generalization)
+# Data Augmentation Functions (For this Thesis - Domain Generalization)
 # ============================================================================
 
 def augment_rotation(image, angle_range=(-30, 30)):
@@ -112,10 +107,6 @@ def augment_intensity(image, intensity_range=(0.9, 1.1)):
 
 
 def augment_elastic_deform(image_array, alpha=30, sigma=5, random_state=None):
-    """
-    Elastic deformation for medical image augmentation.
-    Particularly useful for segmentation tasks.
-    """
     if random_state is None:
         random_state = np.random.RandomState(None)
     
@@ -267,7 +258,6 @@ def organize_processed_data(splits, output_dir, copy_files=True):
 
 def preprocess_and_save(image_path, output_path, target_size=(224, 224)):
     """
-    Preprocess a single image and save it.
     Uses Z-score normalization as per thesis requirements.
     """
     try:
@@ -328,10 +318,6 @@ def get_image_statistics(image_path):
 
 
 def batch_preprocess_images(metadata_path, output_base_dir, target_size=(224, 224)):
-    """
-    Batch preprocess all images according to metadata CSV.
-    Uses Z-score normalization as per thesis requirements.
-    """
     df = pd.read_csv(metadata_path)
     output_base_dir = Path(output_base_dir)
     

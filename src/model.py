@@ -317,6 +317,184 @@ def count_parameters(model):
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
 
+class ImprovedViTSegmentation(nn.Module):
+    """
+    Improved Vision Transformer for Brain Tumor Segmentation with Skip Connections.
+    U-Net style skip connections preserve spatial details from encoder.
+    """
+    def __init__(
+        self,
+        img_size=224,
+        patch_size=16,
+        in_channels=4,
+        num_classes=4,
+        embed_dim=768,
+        depth=12,
+        num_heads=12,
+        mlp_ratio=4,
+        dropout=0.1
+    ):
+        super().__init__()
+        self.img_size = img_size
+        self.patch_size = patch_size
+        self.num_classes = num_classes
+        self.embed_dim = embed_dim
+        
+        # Patch embedding
+        self.patch_embed = PatchEmbedding(img_size, patch_size, in_channels, embed_dim)
+        num_patches = self.patch_embed.num_patches
+        
+        # Positional embedding
+        self.pos_embed = nn.Parameter(torch.zeros(1, num_patches, embed_dim))
+        self.pos_dropout = nn.Dropout(dropout)
+        
+        # Transformer encoder blocks with intermediate feature extraction
+        self.blocks = nn.ModuleList([
+            TransformerEncoderBlock(embed_dim, num_heads, mlp_ratio, dropout)
+            for _ in range(depth)
+        ])
+        
+        # Extract features at different depths for skip connections
+        self.skip_indices = [2, 5, 8, 11]  # Extract at layers 3, 6, 9, 12
+        
+        # Layer normalization
+        self.norm = nn.LayerNorm(embed_dim)
+        
+        # Decoder with skip connections (U-Net style)
+        # Stage 1: 14x14 -> 28x28
+        self.decoder1 = nn.Sequential(
+            nn.Conv2d(embed_dim, 512, 3, padding=1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(inplace=True),
+            nn.Conv2d(512, 512, 3, padding=1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(inplace=True),
+        )
+        self.upsample1 = nn.Upsample(scale_factor=2, mode='bilinear', align_corners=False)
+        
+        # Stage 2: 28x28 -> 56x56 (with skip from layer 9)
+        self.skip_proj2 = nn.Conv2d(embed_dim, 256, 1)  # Project skip connection
+        self.decoder2 = nn.Sequential(
+            nn.Conv2d(512 + 256, 256, 3, padding=1),  # Concatenate skip
+            nn.BatchNorm2d(256),
+            nn.ReLU(inplace=True),
+            nn.Conv2d(256, 256, 3, padding=1),
+            nn.BatchNorm2d(256),
+            nn.ReLU(inplace=True),
+        )
+        self.upsample2 = nn.Upsample(scale_factor=2, mode='bilinear', align_corners=False)
+        
+        # Stage 3: 56x56 -> 112x112 (with skip from layer 6)
+        self.skip_proj3 = nn.Conv2d(embed_dim, 128, 1)
+        self.decoder3 = nn.Sequential(
+            nn.Conv2d(256 + 128, 128, 3, padding=1),
+            nn.BatchNorm2d(128),
+            nn.ReLU(inplace=True),
+            nn.Conv2d(128, 128, 3, padding=1),
+            nn.BatchNorm2d(128),
+            nn.ReLU(inplace=True),
+        )
+        self.upsample3 = nn.Upsample(scale_factor=2, mode='bilinear', align_corners=False)
+        
+        # Stage 4: 112x112 -> 224x224 (with skip from layer 3)
+        self.skip_proj4 = nn.Conv2d(embed_dim, 64, 1)
+        self.decoder4 = nn.Sequential(
+            nn.Conv2d(128 + 64, 64, 3, padding=1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(inplace=True),
+            nn.Conv2d(64, 64, 3, padding=1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(inplace=True),
+        )
+        self.upsample4 = nn.Upsample(scale_factor=2, mode='bilinear', align_corners=False)
+        
+        # Final segmentation head
+        self.seg_head = nn.Conv2d(64, num_classes, 1)
+        
+        # Initialize weights
+        self._init_weights()
+    
+    def _init_weights(self):
+        nn.init.trunc_normal_(self.pos_embed, std=0.02)
+        self.apply(self._init_weights_module)
+    
+    def _init_weights_module(self, m):
+        if isinstance(m, nn.Linear):
+            nn.init.trunc_normal_(m.weight, std=0.02)
+            if m.bias is not None:
+                nn.init.constant_(m.bias, 0)
+        elif isinstance(m, nn.LayerNorm):
+            nn.init.constant_(m.bias, 0)
+            nn.init.constant_(m.weight, 1.0)
+        elif isinstance(m, nn.Conv2d):
+            nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
+            if m.bias is not None:
+                nn.init.constant_(m.bias, 0)
+    
+    def forward(self, x):
+        batch_size = x.shape[0]
+        num_patches_per_side = self.img_size // self.patch_size
+        
+        # Patch embedding
+        x = self.patch_embed(x)
+        
+        # Add positional embedding
+        x = x + self.pos_embed
+        x = self.pos_dropout(x)
+        
+        # Transformer encoder blocks with skip connection extraction
+        skip_features = []
+        for idx, block in enumerate(self.blocks):
+            x = block(x)
+            # Extract features at specified depths
+            if idx in self.skip_indices:
+                # Reshape to spatial dimensions for skip connection
+                skip_feat = rearrange(x, 'b (h w) e -> b e h w', 
+                                    h=num_patches_per_side, w=num_patches_per_side)
+                skip_features.append(skip_feat)
+        
+        # Layer normalization
+        x = self.norm(x)
+        
+        # Reshape for decoder
+        x = rearrange(x, 'b (h w) e -> b e h w', h=num_patches_per_side, w=num_patches_per_side)
+        
+        # Decoder Stage 1: 14x14 -> 28x28
+        x = self.decoder1(x)
+        x = self.upsample1(x)
+        
+        # Decoder Stage 2: 28x28 -> 56x56 (with skip from layer 9)
+        skip2 = self.skip_proj2(skip_features[2])  # From layer 9
+        skip2 = F.interpolate(skip2, size=x.shape[2:], mode='bilinear', align_corners=False)
+        x = torch.cat([x, skip2], dim=1)
+        x = self.decoder2(x)
+        x = self.upsample2(x)
+        
+        # Decoder Stage 3: 56x56 -> 112x112 (with skip from layer 6)
+        skip3 = self.skip_proj3(skip_features[1])  # From layer 6
+        skip3 = F.interpolate(skip3, size=x.shape[2:], mode='bilinear', align_corners=False)
+        x = torch.cat([x, skip3], dim=1)
+        x = self.decoder3(x)
+        x = self.upsample3(x)
+        
+        # Decoder Stage 4: 112x112 -> 224x224 (with skip from layer 3)
+        skip4 = self.skip_proj4(skip_features[0])  # From layer 3
+        skip4 = F.interpolate(skip4, size=x.shape[2:], mode='bilinear', align_corners=False)
+        x = torch.cat([x, skip4], dim=1)
+        x = self.decoder4(x)
+        x = self.upsample4(x)
+        
+        # Final segmentation
+        segmentation_map = self.seg_head(x)
+        
+        return segmentation_map
+
+
+def count_parameters(model):
+    """Count trainable parameters in the model."""
+    return sum(p.numel() for p in model.parameters() if p.requires_grad)
+
+
 def create_vit_classifier(num_classes=4, img_size=224, in_channels=3):
     """
     Factory function to create ViT classifier.
@@ -335,19 +513,38 @@ def create_vit_classifier(num_classes=4, img_size=224, in_channels=3):
     return model
 
 
-def create_vit_segmentation(num_classes=4, img_size=224, in_channels=4):
+def create_vit_segmentation(num_classes=4, img_size=224, in_channels=4, use_skip_connections=True):
     """
     Factory function to create ViT segmentation model.
+    
+    Args:
+        num_classes: Number of segmentation classes
+        img_size: Input image size
+        in_channels: Number of input channels (4 for multi-modal MRI)
+        use_skip_connections: If True, use ImprovedViTSegmentation with U-Net style skip connections
     """
-    model = ViTSegmentation(
-        img_size=img_size,
-        patch_size=16,
-        in_channels=in_channels,
-        num_classes=num_classes,
-        embed_dim=768,
-        depth=12,
-        num_heads=12,
-        mlp_ratio=4,
-        dropout=0.1
-    )
+    if use_skip_connections:
+        model = ImprovedViTSegmentation(
+            img_size=img_size,
+            patch_size=16,
+            in_channels=in_channels,
+            num_classes=num_classes,
+            embed_dim=768,
+            depth=12,
+            num_heads=12,
+            mlp_ratio=4,
+            dropout=0.1
+        )
+    else:
+        model = ViTSegmentation(
+            img_size=img_size,
+            patch_size=16,
+            in_channels=in_channels,
+            num_classes=num_classes,
+            embed_dim=768,
+            depth=12,
+            num_heads=12,
+            mlp_ratio=4,
+            dropout=0.1
+        )
     return model

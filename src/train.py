@@ -54,45 +54,42 @@ class Trainer:
         self.val_accs = []
     
     def train_epoch(self, epoch):
-        """Train for one epoch."""
+        """Train for one epoch with mixed precision."""
         self.model.train()
         running_loss = 0.0
         all_preds = []
         all_labels = []
-        
+        scaler = torch.cuda.amp.GradScaler() if self.device == 'cuda' else None
         pbar = tqdm(self.train_loader, desc=f'Epoch {epoch} [Train]')
         for batch_idx, batch in enumerate(pbar):
             if len(batch) == 3:  # With domain labels
                 images, labels, _ = batch
             else:
                 images, labels = batch
-            
             images = images.to(self.device)
             labels = labels.to(self.device)
-            
-            # Forward pass
             self.optimizer.zero_grad()
-            outputs = self.model(images)
-            loss = self.criterion(outputs, labels)
-            
-            # Backward pass
-            loss.backward()
-            torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)
-            self.optimizer.step()
-            
-            # Track metrics
+            if scaler:
+                with torch.cuda.amp.autocast():
+                    outputs = self.model(images)
+                    loss = self.criterion(outputs, labels)
+                scaler.scale(loss).backward()
+                torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)
+                scaler.step(self.optimizer)
+                scaler.update()
+            else:
+                outputs = self.model(images)
+                loss = self.criterion(outputs, labels)
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)
+                self.optimizer.step()
             running_loss += loss.item()
             preds = outputs.argmax(dim=1).cpu().numpy()
             all_preds.extend(preds)
             all_labels.extend(labels.cpu().numpy())
-            
-            # Update progress bar
             pbar.set_postfix({'loss': loss.item()})
-        
-        # Calculate epoch metrics
         epoch_loss = running_loss / len(self.train_loader)
         epoch_acc = accuracy_score(all_labels, all_preds)
-        
         return epoch_loss, epoch_acc
     
     def validate(self, epoch):
@@ -157,17 +154,20 @@ class Trainer:
             
             epoch_time = time.time() - start_time
             
-            # Logging
-            self.writer.add_scalar('Loss/train', train_loss, epoch)
-            self.writer.add_scalar('Loss/val', val_loss, epoch)
-            self.writer.add_scalar('Accuracy/train', train_acc, epoch)
-            self.writer.add_scalar('Accuracy/val', val_acc, epoch)
-            self.writer.add_scalar('Metrics/precision', val_precision, epoch)
-            self.writer.add_scalar('Metrics/recall', val_recall, epoch)
-            self.writer.add_scalar('Metrics/f1', val_f1, epoch)
+            # Logging (reduced frequency for I/O optimization)
+            log_freq = getattr(self, 'log_freq', 1)  # Default to every epoch if not set
+            if epoch % log_freq == 0:
+                self.writer.add_scalar('Loss/train', train_loss, epoch)
+                self.writer.add_scalar('Loss/val', val_loss, epoch)
+                self.writer.add_scalar('Accuracy/train', train_acc, epoch)
+                self.writer.add_scalar('Accuracy/val', val_acc, epoch)
+                self.writer.add_scalar('Metrics/precision', val_precision, epoch)
+                self.writer.add_scalar('Metrics/recall', val_recall, epoch)
+                self.writer.add_scalar('Metrics/f1', val_f1, epoch)
             
             if self.scheduler:
-                self.writer.add_scalar('LR', self.optimizer.param_groups[0]['lr'], epoch)
+                if epoch % log_freq == 0:
+                    self.writer.add_scalar('LR', self.optimizer.param_groups[0]['lr'], epoch)
                 self.scheduler.step()
             
             # Print epoch summary
@@ -185,9 +185,7 @@ class Trainer:
             else:
                 patience_counter += 1
             
-            # Regular checkpoint
-            if epoch % 10 == 0:
-                self.save_checkpoint(epoch, val_acc, is_best=False)
+            # Removed periodic checkpoint saving to save storage
             
             # Early stopping
             if patience_counter >= early_stopping_patience:
@@ -216,16 +214,12 @@ class Trainer:
             'train_accs': self.train_accs,
             'val_accs': self.val_accs
         }
-        
         if self.scheduler:
             checkpoint['scheduler_state_dict'] = self.scheduler.state_dict()
-        
+        # Only save best model checkpoint
         if is_best:
             save_path = self.save_dir / 'best_model.pth'
-        else:
-            save_path = self.save_dir / f'checkpoint_epoch_{epoch}.pth'
-        
-        torch.save(checkpoint, save_path)
+            torch.save(checkpoint, save_path)
     
     def save_history(self):
         """Save training history."""
@@ -363,7 +357,8 @@ class SegmentationTrainer:
         device='cuda',
         save_dir='experiments/segmentation_checkpoints',
         log_dir='experiments/segmentation_logs',
-        num_classes=4
+        num_classes=4,
+        checkpoint_freq=10  # Added: Save checkpoint every N epochs
     ):
         self.model = model.to(device)
         self.train_loader = train_loader
@@ -375,6 +370,7 @@ class SegmentationTrainer:
         self.save_dir = Path(save_dir)
         self.save_dir.mkdir(parents=True, exist_ok=True)
         self.num_classes = num_classes
+        self.checkpoint_freq = checkpoint_freq  # Store checkpoint frequency
         
         # TensorBoard writer
         self.writer = SummaryWriter(log_dir)
@@ -498,19 +494,21 @@ class SegmentationTrainer:
             self.train_dice_scores.append(train_metrics['mean_dice'])
             self.val_dice_scores.append(val_metrics['mean_dice'])
             
-            # Log to TensorBoard
-            self.writer.add_scalar('Loss/train', train_loss, epoch)
-            self.writer.add_scalar('Loss/val', val_loss, epoch)
-            self.writer.add_scalar('Dice/train', train_metrics['mean_dice'], epoch)
-            self.writer.add_scalar('Dice/val', val_metrics['mean_dice'], epoch)
-            self.writer.add_scalar('IoU/train', train_metrics['mean_iou'], epoch)
-            self.writer.add_scalar('IoU/val', val_metrics['mean_iou'], epoch)
-            
-            # Log per-class metrics
-            class_names = ['background', 'whole_tumor', 'tumor_core', 'enhancing_tumor']
-            for i, name in enumerate(class_names):
-                self.writer.add_scalar(f'Dice_{name}/train', train_metrics[f'dice_{name}'], epoch)
-                self.writer.add_scalar(f'Dice_{name}/val', val_metrics[f'dice_{name}'], epoch)
+            # Log to TensorBoard (reduced frequency for I/O optimization)
+            log_freq = getattr(self, 'log_freq', 1)  # Default to every epoch
+            if epoch % log_freq == 0:
+                self.writer.add_scalar('Loss/train', train_loss, epoch)
+                self.writer.add_scalar('Loss/val', val_loss, epoch)
+                self.writer.add_scalar('Dice/train', train_metrics['mean_dice'], epoch)
+                self.writer.add_scalar('Dice/val', val_metrics['mean_dice'], epoch)
+                self.writer.add_scalar('IoU/train', train_metrics['mean_iou'], epoch)
+                self.writer.add_scalar('IoU/val', val_metrics['mean_iou'], epoch)
+                
+                # Log per-class metrics
+                class_names = ['background', 'whole_tumor', 'tumor_core', 'enhancing_tumor']
+                for i, name in enumerate(class_names):
+                    self.writer.add_scalar(f'Dice_{name}/train', train_metrics[f'dice_{name}'], epoch)
+                    self.writer.add_scalar(f'Dice_{name}/val', val_metrics[f'dice_{name}'], epoch)
             
             # Print epoch summary
             epoch_time = time.time() - start_time
@@ -524,13 +522,11 @@ class SegmentationTrainer:
                 self.best_val_dice = val_metrics['mean_dice']
                 self.save_checkpoint(epoch, val_metrics, is_best=True)
                 patience_counter = 0
-                print(f"✓ New best model! Dice: {self.best_val_dice:.4f}")
+                print(f" New best model! Dice: {self.best_val_dice:.4f}")
             else:
                 patience_counter += 1
             
-            # Periodic checkpoint
-            if epoch % 10 == 0:
-                self.save_checkpoint(epoch, val_metrics, is_best=False)
+            # Removed periodic checkpoint saving to save storage
             
             # Early stopping
             if patience_counter >= early_stopping_patience:
@@ -555,14 +551,10 @@ class SegmentationTrainer:
             'best_val_dice': self.best_val_dice,
             'metrics': metrics
         }
-        
         if is_best:
             save_path = self.save_dir / 'best_model.pth'
-        else:
-            save_path = self.save_dir / f'checkpoint_epoch_{epoch}.pth'
-        
-        torch.save(checkpoint, save_path)
-        print(f"Checkpoint saved: {save_path}")
+            torch.save(checkpoint, save_path)
+            print(f"Checkpoint saved: {save_path}")
     
     def save_training_history(self):
         """Save training history to JSON."""
@@ -590,15 +582,32 @@ def train_segmentation_model(
     batch_size=8,
     num_epochs=100,
     learning_rate=1e-4,
+    encoder_lr=None,  # NEW: Separate LR for encoder (defaults to learning_rate)
+    decoder_lr=None,  # NEW: Separate LR for decoder (defaults to learning_rate)
     weight_decay=0.05,
     device='cuda',
     save_dir='experiments/segmentation_checkpoints',
     log_dir='experiments/segmentation_logs',
     img_size=224,
-    loss_type='combined'
+    loss_type='combined',
+    dice_weight=0.7,  # NEW: Weight for dice in combined losses
+    focal_weight=0.3,  # NEW: Weight for focal in focal_dice loss
+    focal_gamma=2.0,  # NEW: Focal loss gamma parameter
+    use_skip_connections=True,  # NEW: Use improved model with skip connections
+    num_workers=0,
+    checkpoint_freq=10,
+    early_stopping_patience=15,
+    augment_config=None  # NEW: Custom augmentation configuration
 ):
     """
-    Complete pipeline for training segmentation model.
+    Complete pipeline for training segmentation model with improvements.
+    
+    New features:
+    - Differential learning rates for encoder/decoder
+    - Improved loss functions (focal_dice)
+    - Skip connections in model architecture
+    - Configurable loss weights
+    - Custom augmentation control
     """
     from src.model import create_vit_segmentation
     from src.dataset import create_segmentation_dataloaders
@@ -617,29 +626,71 @@ def train_segmentation_model(
         test_csv=test_csv,
         data_root=data_root,
         batch_size=batch_size,
-        num_workers=4,
+        num_workers=num_workers,
         augment_train=True,
+        augment_config=augment_config,  # Pass custom config
         img_size=img_size
     )
     
+    print(f"  Using num_workers={num_workers}")
+    
     # Create model
-    print("\nCreating segmentation model...")
+    print(f"\nCreating segmentation model (skip_connections={use_skip_connections})...")
     model = create_vit_segmentation(
         num_classes=num_classes,
         img_size=img_size,
-        in_channels=4  # T1, T1-CE, T2, FLAIR
+        in_channels=4,  # T1, T1-CE, T2, FLAIR
+        use_skip_connections=use_skip_connections
     )
     
-    # Loss function
-    criterion = get_segmentation_loss(loss_type=loss_type)
-    print(f"Using {loss_type} loss")
+    # Loss function with improved parameters
+    loss_kwargs = {}
+    if loss_type == 'focal_dice':
+        loss_kwargs = {
+            'dice_weight': dice_weight,
+            'focal_weight': focal_weight,
+            'focal_gamma': focal_gamma
+        }
+    elif loss_type == 'combined':
+        loss_kwargs = {
+            'dice_weight': dice_weight,
+            'ce_weight': 1.0 - dice_weight
+        }
     
-    # Optimizer
-    optimizer = optim.AdamW(
-        model.parameters(),
-        lr=learning_rate,
-        weight_decay=weight_decay
-    )
+    criterion = get_segmentation_loss(loss_type=loss_type, **loss_kwargs)
+    print(f"Using {loss_type} loss with weights: {loss_kwargs}")
+    
+    # Optimizer with differential learning rates
+    if encoder_lr is None:
+        encoder_lr = learning_rate
+    if decoder_lr is None:
+        decoder_lr = learning_rate
+    
+    # Group parameters by encoder/decoder for differential LR
+    if use_skip_connections and (encoder_lr != decoder_lr):
+        print(f"\nUsing differential learning rates:")
+        print(f"  Encoder LR: {encoder_lr}")
+        print(f"  Decoder LR: {decoder_lr}")
+        
+        encoder_params = []
+        decoder_params = []
+        
+        for name, param in model.named_parameters():
+            if 'decoder' in name or 'skip_proj' in name or 'seg_head' in name or 'upsample' in name:
+                decoder_params.append(param)
+            else:
+                encoder_params.append(param)
+        
+        optimizer = optim.AdamW([
+            {'params': encoder_params, 'lr': encoder_lr},
+            {'params': decoder_params, 'lr': decoder_lr}
+        ], weight_decay=weight_decay)
+    else:
+        optimizer = optim.AdamW(
+            model.parameters(),
+            lr=learning_rate,
+            weight_decay=weight_decay
+        )
     
     # Learning rate scheduler
     scheduler = optim.lr_scheduler.CosineAnnealingLR(
@@ -659,11 +710,12 @@ def train_segmentation_model(
         device=device,
         save_dir=save_dir,
         log_dir=log_dir,
-        num_classes=num_classes
+        num_classes=num_classes,
+        checkpoint_freq=checkpoint_freq  # Pass checkpoint frequency
     )
     
     # Train
-    trainer.train(num_epochs=num_epochs, early_stopping_patience=15)
+    trainer.train(num_epochs=num_epochs, early_stopping_patience=early_stopping_patience)
     
     return trainer
 

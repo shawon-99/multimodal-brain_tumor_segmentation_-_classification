@@ -118,10 +118,20 @@ def set_seed(seed=42):
 
 
 def get_device():
-    """Get available device."""
+    """Get available device (CUDA, DirectML, or CPU)."""
+    # Check for CUDA (NVIDIA GPUs)
     if torch.cuda.is_available():
         device = torch.device('cuda')
-        print(f"Using GPU: {torch.cuda.get_device_name(0)}")
+        print(f"Using CUDA GPU: {torch.cuda.get_device_name(0)}")
+    # Check for DirectML (AMD/Intel GPUs on Windows)
+    elif hasattr(torch, 'dml') or 'dml' in dir(torch):
+        try:
+            import torch_directml
+            device = torch_directml.device()
+            print("Using DirectML GPU (AMD/Intel)")
+        except:
+            device = torch.device('cpu')
+            print("Using CPU")
     else:
         device = torch.device('cpu')
         print("Using CPU")

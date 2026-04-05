@@ -16,24 +16,11 @@ class DiceLoss(nn.Module):
     """
     
     def __init__(self, smooth=1.0, ignore_index=-100):
-        """
-        Args:
-            smooth: Smoothing factor to avoid division by zero
-            ignore_index: Index to ignore in loss computation
-        """
         super().__init__()
         self.smooth = smooth
         self.ignore_index = ignore_index
     
     def forward(self, pred, target):
-        """
-        Args:
-            pred: Predicted logits (B, C, H, W)
-            target: Ground truth labels (B, H, W)
-        
-        Returns:
-            Dice loss (scalar)
-        """
         # Apply softmax to get probabilities
         pred_probs = F.softmax(pred, dim=1)
         
@@ -72,10 +59,6 @@ class DiceLoss(nn.Module):
 class FocalLoss(nn.Module):
     """
     Focal Loss for addressing class imbalance.
-    
-    FL(p_t) = -α_t * (1 - p_t)^γ * log(p_t)
-    
-    Reference: https://arxiv.org/abs/1708.02002
     """
     
     def __init__(self, alpha=None, gamma=2.0, ignore_index=-100):
@@ -142,7 +125,6 @@ class FocalLoss(nn.Module):
 class CombinedLoss(nn.Module):
     """
     Combined Dice + Cross Entropy Loss for segmentation.
-    
     This combination leverages:
     - Dice Loss: Good for class imbalance, focuses on overlap
     - Cross Entropy: Penalizes confident wrong predictions
@@ -150,7 +132,6 @@ class CombinedLoss(nn.Module):
     
     def __init__(self, dice_weight=0.5, ce_weight=0.5, class_weights=None, ignore_index=-100):
         """
-        Args:
             dice_weight: Weight for Dice loss
             ce_weight: Weight for Cross Entropy loss
             class_weights: Class weights for CE loss (tensor of shape [num_classes])
@@ -168,14 +149,6 @@ class CombinedLoss(nn.Module):
         )
     
     def forward(self, pred, target):
-        """
-        Args:
-            pred: Predicted logits (B, C, H, W)
-            target: Ground truth labels (B, H, W)
-        
-        Returns:
-            Combined loss (scalar)
-        """
         dice = self.dice_loss(pred, target)
         ce = self.ce_loss(pred, target)
         
@@ -184,38 +157,49 @@ class CombinedLoss(nn.Module):
         return total_loss, dice, ce
 
 
-class TverskyLoss(nn.Module):
+class FocalDiceLoss(nn.Module):
     """
-    Tversky Loss - generalization of Dice loss with adjustable penalties.
-    
-    Useful for handling false positives and false negatives differently.
-    
-    Reference: https://arxiv.org/abs/1706.05721
+    Improved Combined Focal + Dice Loss for better handling of hard examples.
+    Focal loss down-weights easy examples, Dice handles class imbalance.
     """
     
-    def __init__(self, alpha=0.5, beta=0.5, smooth=1.0):
+    def __init__(self, dice_weight=0.7, focal_weight=0.3, focal_gamma=2.0, 
+                 focal_alpha=None, smooth=1.0, ignore_index=-100):
         """
         Args:
-            alpha: Weight for false positives
-            beta: Weight for false negatives
-            smooth: Smoothing factor
-            
-        Note: alpha=beta=0.5 reduces to Dice Loss
+            dice_weight: Weight for Dice loss (default 0.7 to prioritize overlap)
+            focal_weight: Weight for Focal loss
+            focal_gamma: Focusing parameter (higher = focus more on hard examples)
+            focal_alpha: Class weights for focal loss
+            smooth: Smoothing factor for Dice
+            ignore_index: Index to ignore
         """
+        super().__init__()
+        self.dice_weight = dice_weight
+        self.focal_weight = focal_weight
+        self.ignore_index = ignore_index
+        
+        self.dice_loss = DiceLoss(smooth=smooth, ignore_index=ignore_index)
+        self.focal_loss = FocalLoss(alpha=focal_alpha, gamma=focal_gamma, ignore_index=ignore_index)
+    
+    def forward(self, pred, target):
+        dice = self.dice_loss(pred, target)
+        focal = self.focal_loss(pred, target)
+        
+        total_loss = self.dice_weight * dice + self.focal_weight * focal
+        
+        return total_loss, dice, focal
+
+
+class TverskyLoss(nn.Module):
+    
+    def __init__(self, alpha=0.5, beta=0.5, smooth=1.0):
         super().__init__()
         self.alpha = alpha
         self.beta = beta
         self.smooth = smooth
     
     def forward(self, pred, target):
-        """
-        Args:
-            pred: Predicted logits (B, C, H, W)
-            target: Ground truth labels (B, H, W)
-        
-        Returns:
-            Tversky loss (scalar)
-        """
         # Apply softmax to get probabilities
         pred_probs = F.softmax(pred, dim=1)
         
@@ -253,13 +237,6 @@ class TverskyLoss(nn.Module):
 def get_segmentation_loss(loss_type='combined', **kwargs):
     """
     Factory function to create segmentation loss.
-    
-    Args:
-        loss_type: 'dice', 'focal', 'combined', 'tversky', or 'ce'
-        **kwargs: Additional arguments for loss function
-    
-    Returns:
-        Loss function module
     """
     if loss_type == 'dice':
         return DiceLoss(**kwargs)
@@ -267,6 +244,8 @@ def get_segmentation_loss(loss_type='combined', **kwargs):
         return FocalLoss(**kwargs)
     elif loss_type == 'combined':
         return CombinedLoss(**kwargs)
+    elif loss_type == 'focal_dice':
+        return FocalDiceLoss(**kwargs)
     elif loss_type == 'tversky':
         return TverskyLoss(**kwargs)
     elif loss_type == 'ce':

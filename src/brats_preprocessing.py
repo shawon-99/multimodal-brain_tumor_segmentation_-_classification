@@ -16,12 +16,6 @@ import matplotlib.pyplot as plt
 def load_nifti_volume(nifti_path: str) -> np.ndarray:
     """
     Load a NIfTI file and return the volume as numpy array.
-    
-    Args:
-        nifti_path: Path to .nii or .nii.gz file
-    
-    Returns:
-        3D numpy array (H, W, D)
     """
     nifti_img = nib.load(nifti_path)
     volume = nifti_img.get_fdata()
@@ -31,12 +25,6 @@ def load_nifti_volume(nifti_path: str) -> np.ndarray:
 def load_brats_patient(patient_dir: Path) -> Dict[str, np.ndarray]:
     """
     Load all modalities and segmentation for a single BRATs patient.
-    
-    Args:
-        patient_dir: Path to patient folder (e.g., BraTS20_Training_001)
-    
-    Returns:
-        Dictionary with keys: 't1', 't1ce', 't2', 'flair', 'seg'
     """
     patient_id = patient_dir.name
     
@@ -57,12 +45,6 @@ def load_brats_patient(patient_dir: Path) -> Dict[str, np.ndarray]:
 def normalize_slice(slice_data: np.ndarray) -> np.ndarray:
     """
     Normalize a single 2D slice using Z-score normalization.
-    
-    Args:
-        slice_data: 2D array (H, W)
-    
-    Returns:
-        Normalized 2D array
     """
     # Only normalize non-zero regions (brain tissue)
     mask = slice_data > 0
@@ -87,12 +69,6 @@ def convert_brats_labels(seg_slice: np.ndarray) -> np.ndarray:
         1: Whole Tumor (any tumor region: 1, 2, 4)
         2: Tumor Core (necrotic + enhancing: 1, 4)
         3: Enhancing Tumor (4)
-    
-    Args:
-        seg_slice: 2D segmentation mask with BRATs labels
-    
-    Returns:
-        2D segmentation mask with 0-3 labels
     """
     output = np.zeros_like(seg_slice, dtype=np.uint8)
     
@@ -111,13 +87,6 @@ def convert_brats_labels(seg_slice: np.ndarray) -> np.ndarray:
 def has_significant_tumor(seg_slice: np.ndarray, min_pixels: int = 50) -> bool:
     """
     Check if a slice contains significant tumor (not just a few pixels).
-    
-    Args:
-        seg_slice: 2D segmentation mask
-        min_pixels: Minimum number of tumor pixels to be considered significant
-    
-    Returns:
-        True if slice has significant tumor
     """
     tumor_pixels = (seg_slice > 0).sum()
     return tumor_pixels >= min_pixels
@@ -133,17 +102,6 @@ def extract_2d_slices(
 ) -> List[Dict]:
     """
     Extract 2D slices from 3D volumes.
-    
-    Args:
-        volumes: Dictionary with modality volumes
-        patient_id: Patient identifier
-        output_dir: Directory to save extracted slices
-        slice_range: (start, end) indices for axial slices, or None for auto-detect
-        min_tumor_pixels: Minimum tumor pixels for slice to be included
-        save_slices: Whether to save slices to disk (False for on-the-fly loading)
-    
-    Returns:
-        List of dictionaries with slice metadata
     """
     # Get dimensions (assumes all volumes have same shape)
     height, width, depth = volumes['t1'].shape
@@ -241,15 +199,6 @@ def process_brats_dataset(
 ):
     """
     Process entire BRATs dataset: extract slices and create metadata.
-    
-    Args:
-        brats_root: Path to BRATs root (e.g., 'Dataset/Extracted data/BRATs_2020/...')
-        output_dir: Where to save processed data
-        train_ratio: Proportion of data for training
-        val_ratio: Proportion of data for validation
-        save_slices: Whether to save extracted slices (False for on-the-fly loading)
-        min_tumor_pixels: Minimum tumor pixels for slice inclusion
-        max_patients: Maximum number of patients to process (for testing)
     """
     brats_root = Path(brats_root)
     output_dir = Path(output_dir)
@@ -383,11 +332,6 @@ def visualize_brats_slice(
 ):
     """
     Visualize all modalities and segmentation for a single slice.
-    
-    Args:
-        volumes: Dictionary with modality volumes
-        slice_idx: Slice index to visualize
-        save_path: Path to save figure (optional)
     """
     fig, axes = plt.subplots(2, 3, figsize=(15, 10))
     

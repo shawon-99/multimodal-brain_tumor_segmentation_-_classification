@@ -19,10 +19,6 @@ class Evaluator:
     def __init__(self, model, device='cuda'):
         """
         Initialize evaluator.
-        
-        Args:
-            model: Trained model
-            device: Device to run evaluation on
         """
         self.model = model
         self.device = device
@@ -33,13 +29,6 @@ class Evaluator:
     def evaluate(self, dataloader, class_names=None):
         """
         Evaluate model on dataloader.
-        
-        Args:
-            dataloader: DataLoader for evaluation
-            class_names: List of class names
-        
-        Returns:
-            Dictionary with metrics
         """
         all_preds = []
         all_labels = []
@@ -153,10 +142,6 @@ class CrossDatasetEvaluator:
     def __init__(self, model, device='cuda'):
         """
         Initialize cross-dataset evaluator.
-        
-        Args:
-            model: Trained model
-            device: Device to run evaluation on
         """
         self.model = model
         self.device = device
@@ -165,13 +150,6 @@ class CrossDatasetEvaluator:
     def evaluate_all_datasets(self, dataloaders_dict, class_names=None):
         """
         Evaluate on multiple datasets.
-        
-        Args:
-            dataloaders_dict: Dictionary {dataset_name: dataloader}
-            class_names: List of class names
-        
-        Returns:
-            Dictionary {dataset_name: metrics}
         """
         results = {}
         
@@ -216,13 +194,6 @@ class CrossDatasetEvaluator:
     def leave_one_out_evaluation(self, all_dataloaders, dataset_names, class_names=None):
         """
         Perform leave-one-domain-out evaluation.
-        
-        Args:
-            all_dataloaders: List of dataloaders for each dataset
-            dataset_names: List of dataset names
-            class_names: List of class names
-        
-        Note: This requires retraining for each held-out domain
         """
         print("\n" + "="*60)
         print("LEAVE-ONE-DOMAIN-OUT EVALUATION")
@@ -235,10 +206,6 @@ class CrossDatasetEvaluator:
 def save_evaluation_results(results, save_path):
     """
     Save evaluation results to JSON.
-    
-    Args:
-        results: Dictionary with evaluation metrics
-        save_path: Path to save JSON file
     """
     save_path = Path(save_path)
     save_path.parent.mkdir(parents=True, exist_ok=True)
@@ -252,9 +219,6 @@ def save_evaluation_results(results, save_path):
 def compare_models(results_dict):
     """
     Compare multiple models.
-    
-    Args:
-        results_dict: Dictionary {model_name: metrics_dict}
     """
     print("\n" + "="*60)
     print("MODEL COMPARISON")
