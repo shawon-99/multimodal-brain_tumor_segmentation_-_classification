@@ -427,7 +427,7 @@ def visualize_brats_slice(
 
 if __name__ == "__main__":
     # Example usage with S3 paths
-    BRATS_ROOT = "s3://sagemaker-us-east-2-826634839412/unzipped-data/BRATs_2020/BraTS2020_TrainingData/MICCAI_BraTS2020_TrainingData"
+    BRATS_ROOT = "s3://sagemaker-us-east-2-826634839412/unzipped-data/Extracted data/BRATs_2020/BraTS2020_TrainingData/MICCAI_BraTS2020_TrainingData"
     OUTPUT_DIR = "s3://sagemaker-us-east-2-826634839412/unzipped-data/brats_preprocessed"
 
     process_brats_dataset(
